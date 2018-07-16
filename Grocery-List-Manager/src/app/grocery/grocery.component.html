@@ -1,14 +1,25 @@
-<div>
+<div class="mat-card">
+  <div  class="input-box">
 <input #newItem
     (keyup.enter)="addItem(newItem.value); newItem.value=''"
     (blur)="addItem(newItem.value); newItem.value='' "
 >
 &nbsp;&nbsp;  <button (click)="addItem(newItem.value)">Add</button>
+</div>
+
+<!--<mat-form-field appearance="outline">
+    <input matInput placeholder="Enter Item"  [formControl]="newItem" (keyup.enter)="addItem(newItem.value); newItem.value=''">
+    <button mat-icon-button (click)="addItem(newItem.value); newItem.value =''">
+        <mat-icon>ADD</mat-icon>
+     </button>
+</mat-form-field>
+-->
+
 
   <mat-nav-list class="list-class">
       <mat-list-item *ngFor="let item of items">
          <button mat-icon-button (click)="removeItem(item)">
-            <mat-icon>Delete</mat-icon>
+            <mat-icon>delete</mat-icon>
          </button>
          <a matLine>{{ item }}</a>
       </mat-list-item>

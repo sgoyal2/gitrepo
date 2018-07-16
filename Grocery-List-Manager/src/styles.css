@@ -1,18 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
+
+body{
+    background-color:rgba(0,0,255,0.3);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    margin:0px;
+    
+}
+.mat-toolbar{
+    place-content:center;
+    max-height:40px;
+}
+input-box{
+    width:300px;
+    height:200px;
+    place-content: center;
+    margin-left:25px;
+   }
+   
 .mat-card{
-    width:400px;
+    width:500px;
+    height: 800;
     place-content: left;
     margin-left:25%;
-    align-items: flex-start;
     z-index: 20;  
     margin:4em;
-    color:rgb(116, 105, 219);  
-}
-.card-class{
-    place-content: left;
-    margin-left:25%;
+    background-color:rgba(192,192,192,0.3);
+     
 }
 
 .list-class{
